@@ -9,17 +9,41 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.6.3",
+    "@apollo/client": "^3.8.0-rc.2",
+    "@apollo/experimental-nextjs-app-support": "^0.4.3",
+    "@auth0/nextjs-auth0": "^3.1.0",
+    "@pothos-examples/prisma": "^2.4.65",
+    "@pothos/core": "^3.38.0",
+    "@pothos/plugin-prisma": "^3.60.0",
+    "@pothos/plugin-relay": "^3.44.0",
+    "@prisma/client": "^5.3.1",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
+    "@whatwg-node/fetch": "^0.9.13",
     "autoprefixer": "10.4.15",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.1",
+    "graphql": "^16.8.1",
+    "graphql-scalars": "^1.22.2",
+    "graphql-yoga": "^4.0.4",
+    "js-cookie": "^3.0.5",
     "next": "13.5.1",
+    "next-auth": "^4.23.2",
     "postcss": "8.4.30",
+    "pothos": "^0.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "request": "^2.88.2",
+    "tailwindcss": "3.3.3"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.3",
+    "encoding": "^0.1.13",
+    "prisma": "^5.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   }
 }
